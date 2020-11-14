@@ -1,0 +1,29 @@
+﻿@{
+    var title = @Document.GetString("Title") ?? @Document.GetString("SiteTitle");
+    var tagline = @Document.GetString("TagLine") ?? @Document.GetString("SiteTagLine");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+    <title>@title</title>
+    <link href="@Context.GetLink("/scss/style.css")" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="page-header" style="padding-top: 80px; padding-bottom: 40px; background: linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.0)), url('assets/img/home-header.jpg') center center repeat;">
+      <h1 class="project-name">@title</h1>
+      <h2 class="project-tagline">@tagline</h2>
+      <a href="" class="btn">No Source Code</a>
+    </section>
+    <div class="container">
+      @RenderBody()
+    </div>
+  </body>
+
+</html>

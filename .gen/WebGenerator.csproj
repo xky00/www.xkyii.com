@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LocalReferences>false</LocalReferences>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.12" />
+  </ItemGroup>
+
+  <Choose>
+    <When Condition=" '$(LocalReferences)' == 'true'">
+      <ItemGroup>
+        <ProjectReference Include="..\..\..\xkForks\Statiq.Web\src\Statiq.Web\Statiq.Web.csproj" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Statiq.Web" Version="1.0.0-beta.12" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+</Project>
