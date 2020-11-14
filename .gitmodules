@@ -1,4 +1,0 @@
-[submodule "theme"]
-	path = theme
-	url = https://github.com/xkdip/Statiq.Theme.SimpleBlog.git
-	branch = main
