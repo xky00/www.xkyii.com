@@ -1,2 +1,6 @@
 ﻿.gen/.vs
 artifacts
+output
+bin
+obj
+.vs
