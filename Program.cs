@@ -1,15 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Markdig;
-using Microsoft.Extensions.DependencyInjection;
 using Statiq.App;
 using Statiq.Common;
-using Statiq.Core;
-using Statiq.Markdown;
 using Statiq.Web;
-using Statiq.Web.Modules;
+#if !DEBUG
+using Statiq.Core;
 using Statiq.Web.Pipelines;
-using WebGenerator.Extensions;
+using Microsoft.Extensions.DependencyInjection;
+#endif
 
 namespace WebGenerator
 {
@@ -28,6 +26,7 @@ namespace WebGenerator
                     new NormalizedPath(".git"),
                     new NormalizedPath("assets/image1/.git"),
                 })
+#if !DEBUG
                 // do some trick
                 .ConfigureEngine(engine =>
                 {
@@ -49,6 +48,7 @@ namespace WebGenerator
                         }
                     }
                 })
+#endif
                 .RunAsync();
         }
     }

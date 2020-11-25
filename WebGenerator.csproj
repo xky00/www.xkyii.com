@@ -6,6 +6,10 @@
     <LocalReferences>false</LocalReferences>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Statiq.Web" Version="1.0.0-beta.12" />
   </ItemGroup>
