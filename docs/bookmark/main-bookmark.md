@@ -1,7 +1,7 @@
 ---
 title: 书签
 layout: post
-ImageRootUrl: https://image1.xkyii.com/
+ImageUrlFormat: https://{0}.xkyii.com/
 DestinationFileName: index.html
 ---
 
