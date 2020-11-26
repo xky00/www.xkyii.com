@@ -1,7 +1,7 @@
-﻿.gen/.vs
-artifacts
+﻿artifacts
 output
 bin
 obj
 .vs
+.vscode
 docs/assets/image1

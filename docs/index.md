@@ -1,10 +1,15 @@
 ---
-title: 鱼猫大脚
-tagline: 蜗牛，你作业写完了吗？
+title: (_　_)。゜zｚＺ
+tagline: 终究还是在这里相遇了啊
 layout: home
-exlinks:
+ExLinks:
   - title: 搬砖向
-    link: http://it.xkyii.com
+    link: https://it.xkyii.com
+  - title: 书签
+    link: => GetLink("bookmark")
+MainSiteTitle: => GetString("SiteTitle")
+MainSiteLink: /
 ---
 
-啊哦
+## 2020.11.25
+蜗牛，你作业做完了吗
