@@ -12,30 +12,51 @@
   </div>
 
   <script>
+    var testText = `
+    <div>
+      <p>Test</p>
+      <img class="private-image" data-src="https://api.github.com/repos/xkdip/image2/contents/2020/11/test.png?ref=main" />
+    </div>`
 
-    function replaceinner(id, text) {
-        var x = document.getElementById(id);
-        x.innerHTML = text;
-    }
-
-
-    fetch('https://api.github.com/repos/xkdip/hermit/contents/docs/test/index.html?ref=develop', {
+    var init = {
       headers: {
         'Authorization': 'token _token_',
         'Accept': 'application/vnd.github.v3.raw',
       },
-    })
-      .then(response => {
+    };
 
-        response.text().then(t => {
-          console.log(t);
-          replaceinner("test", t);
-        });
-      })
-      .catch(() => {
-        throw new Error('File unreachable');
-      });
+    function handleTxts() {
+      fetch('https://api.github.com/repos/xkdip/hermit/contents/docs/test/index.html?ref=develop', init)
+        .then(rsp => rsp.text())
+        .then(text => {
+          console.log('load txt...');
+          document.getElementById("test").innerHTML = testText;
+          handleImgs();
+        })
+        .catch(() => {
+          throw new Error('Txt load FAILED.');
+        });
+    }
 
+    function handleImgs() {
+      var imgs = document.querySelectorAll('.private-image');
+      Array.from(imgs).forEach(el => {
+        if (!el.src) {
+          var source = el.dataset.src;
+          fetch(source, init)
+            .then(rsp => rsp.blob())
+            .then(blob => {
+              console.log('load img...');
+              el.src = URL.createObjectURL(blob);
+            })
+            .catch(() => {
+              throw new Error('Image load FAILED.');
+            });
+        }
+      })
+    }
+
+    handleTxts();
   </script>
 </body>
 </html>
