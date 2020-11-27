@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试</title>
+</head>
+<body>
+
+  <div id="test">
+    Original Text
+  </div>
+
+  <script>
+
+    function replaceinner(id, text) {
+        var x = document.getElementById(id);
+        x.innerHTML = text;
+    }
+
+
+    fetch('https://api.github.com/repos/xkdip/hermit/contents/docs/test/index.html?ref=develop', {
+      headers: {
+        'Authorization': 'token _token_',
+        'Accept': 'application/vnd.github.v3.raw',
+      },
+    })
+      .then(response => {
+
+        response.text().then(t => {
+          console.log(t);
+          replaceinner("test", t);
+        });
+      })
+      .catch(() => {
+        throw new Error('File unreachable');
+      });
+
+  </script>
+</body>
+</html>
