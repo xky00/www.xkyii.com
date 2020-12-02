@@ -9,6 +9,8 @@ DestinationFileName: index.html
 * [Scoop](https://scoop.sh/) - Windows命令行包管理工具
 * [IDEA](https://www.jetbrains.com/idea/) - Java开发工具[.](https://pan.baidu.com/s/1JBTBCvj3DyaZYFU-UbxHRw#qudk)
 * [Fork](https://git-fork.com/) - Git客户端
+* [Photoshop] - 照片、图像和设计编辑软件 | Adobe Photoshop
+  * [Photoshop CS6 13.0.0 极简版](https://xkyii.lanzous.com/iPu4pizce8h)
 
 ## 软件站
 * [爱达杂货铺](https://adzhp.cn/) - 收集那些有用的东西
