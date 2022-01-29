@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>鱼猫小林 Blog</title>
+        <link>https://www.xkyii.com/blog</link>
+        <description>鱼猫小林 Blog</description>
+        <lastBuildDate>Sat, 29 Jan 2022 07:31:42 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[hi,开通留念]]></title>
+            <link>https://www.xkyii.com/blog/2021/2021.11.22-hi</link>
+            <guid>/2021/2021.11.22-hi</guid>
+            <pubDate>Sat, 29 Jan 2022 07:31:42 GMT</pubDate>
+            <description><![CDATA[希望这次可以持续下去.]]></description>
+            <content:encoded><![CDATA[<p>希望这次可以持续下去.</p><p>:mask:</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.xkyii.com/blog</id>
+    <title>鱼猫小林 Blog</title>
+    <updated>2022-01-29T07:31:42.998Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://www.xkyii.com/blog"/>
+    <subtitle>鱼猫小林 Blog</subtitle>
+    <icon>https://www.xkyii.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[hi,开通留念]]></title>
+        <id>/2021/2021.11.22-hi</id>
+        <link href="https://www.xkyii.com/blog/2021/2021.11.22-hi"/>
+        <updated>2022-01-29T07:31:42.998Z</updated>
+        <summary type="html"><![CDATA[希望这次可以持续下去.]]></summary>
+        <content type="html"><![CDATA[<p>希望这次可以持续下去.</p><p>:mask:</p>]]></content>
+        <author>
+            <name>xkyii</name>
+            <uri>https://github.com/xkyii</uri>
+        </author>
+    </entry>
+</feed>

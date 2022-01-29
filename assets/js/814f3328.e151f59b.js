@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxkyii_com=self.webpackChunkxkyii_com||[]).push([[535],{5641:function(i){i.exports=JSON.parse('{"title":"\u6700\u8fd1\u53d1\u8868","items":[{"title":"hi,\u5f00\u901a\u7559\u5ff5","permalink":"/blog/2021/2021.11.22-hi"}]}')}}]);
